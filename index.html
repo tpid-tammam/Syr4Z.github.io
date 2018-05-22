@@ -1,7 +1,2144 @@
+<!--============ Sommaire ============
+	1. Head [21 - 40]
+		1.1 Meta [23 - 26]
+		1.2 Css [29 - 36]
+	2. Body [41 - 97 ]
+		2.1 Chargement de page [43 - 47]
+		2.2 Colonne de gauche [55 - 88]
+		2.3 A propos de moi [93 - 550]
+		2.4 Portfolio [553 - 829]
+		2.5 Contact [832 - 932]
+	3. JavaScript [942 - 969]
+-->	
+
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="fr">
+<!--<![endif]-->
+    <head>
+        <!-- Metas -->
+        <meta charset="utf-8">
+        <title>Sam Ronvaux</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Favicon -->
+		<meta name="msapplication-TileImage" content="style/img/favicon/favicon_128x128.png">
+		<meta name="msapplication-TileColor" content="#33373D"/>
+		<!--[if IE]><link rel="shortcut icon" href="style/img/favicon/favicon.ico"><![endif]-->
+		<link rel="icon" type="image/png" href="style/img/favicon/favicon.png">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="style/img/favicon/favicon_144x144.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="istyle/img/favicon/favicon_114x114.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="style/img/favicon/favicon_72x72.png">
+		<link rel="apple-touch-icon-precomposed" href="style/img/favicon/favicon_57x57.png">       
+        <!-- Css -->
+        <link href="style/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="style/css/owl.carousel.css" rel="stylesheet">
+        <link href="style/css/owl.theme.css" rel="stylesheet">
+        <link href="style/css/magnific-popup.css" rel="stylesheet" type="text/css"/>
+        <link href="style/css/font.css" rel="stylesheet" type="text/css">
+        <link href="style/css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="style/css/switcher.css" rel="stylesheet" type="text/css"/>
+        <link href="style/css/animate.css" rel="stylesheet" type="text/css">
+        <!--[if gte IE 9]>
+        	<link rel="stylesheet" type="text/css" href="style/css/ie9.css" />
+		<![endif]-->
+    </head>
+    <body>
+        <!-- Debut du Chargement -->
+        <div id="loader">
+            <div id="loaderInner">
+                <div class="spinner"></div>
+            </div>
+        </div>
+        <!-- Fin du Chargement -->
+<!-- ########################################################################################################################################### -->
+        <!-- Debut du Wrapper -->
+        <div id="wrapper" class="margLTop  margLBottom">
+            <!-- Debut changement de langue -->
+            <div class="switcher">
+                <div>
+                    <h2>Langue</h2>
+                    <a class="toggle" href="#"><i class="icon-language"></i></a>
+                    <nav id="lang-nav" class="lang-nav clearfix tabbed">
+                        <ul>
+                            <li><a class="active" id="fr" href="#"><img class="icon-language" src="style/img/icon/lang-fr.png"/>Français</a></li>
+                            <li><a href="#" id="en"><img class="icon-language" src="style/img/icon/lang-en.png"/>English</a></li>
+                        </ul>
+                    </nav>
+                </div>            
+            </div>
+            <!-- Fin changement de langue -->
+            <!-- Debut du Container Français-->
+            <div id="lang-fr" class="container">
+                <div class="row ">
+                    <!-- Debut de la colonne de gauche (profile) -->
+                    <div class="col-md-3 nopr left-content">
+                        <!-- Debut du Header -->
+                        <header id="header">
+                            <div class="main-header">
+                                <!-- Debut de l'image de profile -->
+                                <figure class="img-profile pushup">
+                                    <img src="style/img/profile.jpg" alt="" />
+                                        <figcaption class="name-profile">
+                                            <span>Sam Ronvaux</span>
+                                        </figcaption>
+                                </figure>
+                                <!-- Fin de l'image de profile -->
+                                <!-- Debut du menu de navigation -->
+                                <nav id="main-nav" class="main-nav clearfix tabbed">
+                                    <ul>
+                                        <li><a href="#about"><i class="icon-user"></i>A propos</a></li>
+                                        <li><a href="#portfolio"><i class="icon-camera"></i>Portfolio</a></li>
+                                        <li><a href="#contact"><i class="icon-phone"></i>Contact</a></li>
+                                    </ul>
+                                </nav>
+                                <!-- Fin du menu de navigation -->
+                            </div>
+                            <!-- Debut des icones de réseaux sociaux -->
+                            <div class="bottom-header ofsTSmall ofsBSmall tCenter">
+                                <ul class="social">
+                                    <li><a href="https://www.facebook.com/sam.rnax" target="_blank"><i class="icon-facebook"></i></a></li>
+                                    <li><a href="https://github.com/Syr4Z" target="_blank"><i class="icon-github"></i></a></li>
+                                    <li><a href="https://be.linkedin.com/in/sam-ronvaux" target="_blank"><i class="icon-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- Fin des icones de réseaux sociaux -->
+                        </header>
+                        <!-- Fin du Header-->
+                    </div>
+                    <!-- Fin de la colonne de gauche (profile) -->
+                    <!-- Debut de la colonne de droite (informations) -->
+                    <div class="col-md-9 right-content">
+                        <!-- Debut de la section a propos -->
+                        <section id="about" class="ofsInBottom">
+                            <!-- Debut de A propos -->
+                            <div class="about">
+                                <!-- Debut du titre des informations personnel -->
+                                <div class="main-title">
+                                    <h1>Qui suis-je ?</h1>
+                                    <div class="divider">
+                                        <div class="zigzag large clearfix " data-svg-drawing="yes">
+                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332	29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fin du titre des informations personnel -->
+                                <!-- Debut du contenu des informations personnel -->
+                                <div class="content">
+                                    <!-- Debut des colonnes de présentation -->
+                                    <div class="block-content margBSmall">
+                                        <div class=" profile margBSmall">
+                                            <h1>Sam Ronvaux</h1>
+                                            <h3>Étudiant en informatique</h3>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h4>
+                                                    Qui suis-je ?
+                                                </h4>
+                                                <div id="t">
+                                                    <del>Il était une fois un jeune étudia</del>
+                                                    Je suis un jeune étudiant âgé de 20 ans actuellement en bachelor Informatique Orientation Réseaux. Je suis quelqu'un de passionné par les nouvelles technologies et qui aime découvrir de nouveaux domaines. Récemment, j'ai pû découvrir une partie des choses que l'on peut réaliser avec l'impression 3D. J'ai profité de cette occasion pour en apprendre plus sur l'utilisation d'une graveuse/découpeuse laser. Cela m'a permis par la suite de partager avec des jeunes d'une dizaine d'années les connaissances que j'ai pû acquérir dans ce domaine.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Fin des colonnes de présentation -->
+                                    <!-- Debut des informations personnel -->
+                                    <div class="block-content">
+                                        <div class="info">
+                                            <div class="row">
+                                                <!-- Debut de la colonne 1 -->
+                                                <div class="col-md-6">
+                                                    <ul class="info-list clearfix wow slideInLeft" data-wow-duration="1.5s" data-wow-delay="0s">
+                                                        <li><span class="inf">Prénom :</span> <span class="value"> Sam </span></li>
+                                                        <li><span class="inf">Âge :</span> <span class="value"> 20 ans </span></li>
+                                                        <li><span class="inf">Email :</span> <span class="value"><a class="value" href="mailto:samronvaux@gmail.com">samronvaux[at]gmail.com</a></span></li>
+                                                    </ul>
+                                                </div>
+                                                <!-- Fin de la colonne 1 -->
+                                                <!-- Debut de la colonne 2 -->
+                                                <div class="col-md-6">
+                                                    <ul class="info-list clearfix wow slideInRight" data-wow-duration="1.5s" data-wow-delay="0s">
+                                                        <li><span class="inf">Nom de famille :</span> <span class="value">Ronvaux</span></li>
+                                                        <li><span class="inf">LinkedIn :</span> <span class="value"><a class="value" href="https://be.linkedin.com/in/sam-ronvaux" target="_blank">Sam Ronvaux</a></span></li>
+                                                        <li><span class="inf">N° de téléphone :</span> <span class="value"><a class="value" href="tel:0032491078668">+32 491 07.86.68</a></span></li>
+                                                    </ul>
+                                                </div>
+                                                <!-- Fin de la colonne 2 -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Fin des informations personnel -->
+                                </div>
+                                <!-- Fin du contenu des informations personnel -->
+                                <!-- Debut du titre des compétences professionnel -->
+                                <div class="main-title">
+                                    <h1>Compétences professionnelles</h1>
+                                    <div class="divider">
+                                        <div class="zigzag large clearfix " data-svg-drawing="yes">
+                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	                                           <path d="M1.357,12.26 10.807,2.81 20.328,12.332 29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fin du titre des compétences professionnel -->
+                                <!-- Debut du contenu  des compétences professionnel -->
+                                <div class="content">
+                                    <!-- Debut des compétences de dévelopement -->
+                                    <div class="block-content margBMedium">
+                                        <div class=" skill dev">
+                                            <div class="row">
+                                                <div class="vc">
+                                                    <div class="col-md-11">
+                                                        <ul class="skills-list clearfix">
+                                                            <li class="wow slideInLeft">
+                                                                <h4>HTML/CSS</h4>
+                                                                <div class="progress">
+                                                                    <div class="percentage">
+                                                                        85%
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="wow slideInLeft">
+                                                                <h4>WINDEV</h4>
+                                                                <div class="progress">
+                                                                    <div class="percentage">
+                                                                        80%
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="wow slideInLeft">
+                                                                <h4>PHP/MYSQL</h4>
+                                                                <div class="progress">
+                                                                    <div class="percentage">
+                                                                        75%
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-1">
+                                                        <div class="title dev wow fadeIn" data-wow-duration="2s">
+                                                            <span>Développement</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Fin des compétences de dévelopement -->
+                                    <!-- Debut des compétences personnel -->
+                                    <div class="block-content margBMedium">
+                                        <div class=" skill prs">
+                                            <div class="row ">
+                                                <div class="vc">
+                                                    <div class="col-md-11">
+                                                        <ul class="skills-list clearfix">
+                                                            <li class="wow slideInLeft">
+                                                                <h4>Prise de responsabilités</h4>
+                                                                <div class="progress">
+                                                                    <div class="percentage">
+                                                                        90%
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="wow slideInLeft">
+                                                                <h4>Faculté de compréhension</h4>
+                                                                <div class="progress">
+                                                                    <div class="percentage">
+                                                                        85%
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="wow slideInLeft">
+                                                                <h4>Prise d'initiatives</h4>
+                                                                <div class="progress">
+                                                                    <div class="percentage">
+                                                                        90%
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-1">
+                                                        <div class="title prs wow fadeIn" data-wow-duration="2s">
+                                                            <span>Atouts personnel</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Fin des compétences personnel -->
+                                    <!-- Debut des compétences de langues -->
+                                    <div class="block-content margBMedium">
+                                        <div class=" skill dev">
+                                            <div class="row">
+                                                <div class="vc">
+                                                    <div class="col-md-11">
+                                                        <ul class="skills-list clearfix">
+                                                            <li class="wow slideInLeft">
+                                                                <h4>Français</h4>
+                                                                <div class="progress">
+                                                                    <div class="percentage">
+                                                                        99%
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="wow slideInLeft">
+                                                                <h4>Anglais</h4>
+                                                                <div class="progress">
+                                                                    <div class="percentage">
+                                                                        75%
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="wow slideInLeft">
+                                                                <h4>Néerlandais</h4>
+                                                                <div class="progress">
+                                                                    <div class="percentage">
+                                                                        20%
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-1">
+                                                        <div class="title dev wow fadeIn" data-wow-duration="2s">
+                                                            <span>linguistique</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Fin des compétences de langues -->
+                                </div>
+                                <!-- Fin du contenu des compétences personnel -->
+                                <!-- Debut du titre de mes diplomes -->
+                                <div class="main-title">
+                                    <h1>Mes Diplômes/Certifications</h1>
+                                    <div class="divider">
+                                        <div class="zigzag large clearfix " data-svg-drawing="yes">
+                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	                                           <path d="M1.357,12.26 10.807,2.81 20.328,12.332 29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fin du titre de mes diplomes -->
+                                <!-- Debut du contenu de mes diplomes -->
+                                <div class="content">
+                                    <div class="block-content ">
+                                        <div class="timeline education">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="exp-holder margTop">
+                                                    	<!-- Debut d'un diplome -->
+                                                        <div class="exp wow fadeIn" data-wow-duration="2s" data-wow-delay="0s">
+                                                            <div class="hgroup">
+                                                                <h4>Aide Moniteur - ASBL Vive le sport</h4>
+                                                                <h6><i class="icon-calendar"></i>Aout 2016</h6>
+                                                            </div>
+                                                            <p>Réussite de ma formation en tant aide moniteur sportif auprès de l'ASBL vive le sport.</p>
+                                                        </div>
+                                                        <!-- Fin d'un diplome -->
+                                                        <!-- Debut d'un diplome -->
+                                                        <div class="exp wow fadeIn" data-wow-duration="2s" data-wow-delay="0s">
+                                                            <div class="hgroup">
+                                                                <h4>CESS - ITCF Henri Maus</h4>
+                                                                <h6><i class="icon-calendar"></i>Juin 2016</h6>
+                                                            </div>
+                                                            <p>Réussite de mon Certificat d'enseignement secondaire supérieur au sein de l'ITCF Henri Maus.</p>
+                                                        </div>
+                                                        <!-- Fin d'un diplome -->
+                                                        <!-- Debut d'un diplome -->
+                                                        <div class="exp wow fadeIn" data-wow-duration="2s" data-wow-delay="0s">
+                                                            <div class="hgroup">
+                                                                <h4>Microsoft Windows 2012 R2 - Technofutur TIC</h4>
+                                                                <h6><i class="icon-calendar"></i>Juin 2016</h6>
+                                                            </div>
+                                                            <p>Fin de ma formation Microsoft Windows 2012 R2 dans le cadre d'une formation fournie par l'ITCF Henri Maus et donnée par un employé de chez MGC pour Technofutur TIC.
+                                                            </p>
+                                                        </div>
+                                                        <!-- Fin d'un diplome -->
+                                                        <!-- Debut d'un diplome -->
+                                                        <div class="exp wow fadeIn" data-wow-duration="2s" data-wow-delay="0s">
+                                                            <div class="hgroup">
+                                                                <h4>HTML 5 / CSS3 - Technofutur TIC</h4>
+                                                                <h6><i class="icon-calendar"></i>Juin 2015</h6>
+                                                            </div>
+                                                            <p>Réussite de ma formation HTML5 et CSS3 dans le cadre d'une formation fournie par l'ITCF Henri Maus et donnée par des formateurs Technofutur TIC.</p>
+                                                        </div>
+                                                        <!-- Fin d'un diplome -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fin du contenu de mes diplomes -->
+                                <!-- Debut du titre des expériences professionnel -->
+                                <div class="main-title">
+                                    <h1>Parcours professionnelles</h1>
+                                    <div class="divider">
+                                        <div class="zigzag large clearfix " data-svg-drawing="yes">
+                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	                                           <path d="M1.357,12.26 10.807,2.81 20.328,12.332 29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+	                                       </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fin du titre des expériences professionnel -->
+                                <!-- Debut du contenu des expériences professionnel -->
+                                <div class="content">
+                                    <div class="block-content">
+                                        <div class="timeline experience">
+                                            <div class="row ">
+                                                <div class="col-md-12">
+                                                    <div class="exp-holder margTop">
+                                                        <!-- Debut d'une expérience -->
+                                                        <div class="exp wow fadeIn" data-wow-duration="2s" data-wow-delay="0s">
+                                                            <div class="hgroup">
+                                                                <h4>Bénévole - Espace Public Numérique</h4>
+                                                                <h6><i class="icon-calendar"></i>Du 02 Mars au 06 Mars 2018</h6>
+                                                            </div>
+                                                            <p>Aide lors de stage à mon ancien lieu de stage. Test de nouvelles machines (graveuse laser, imprimante 3D, ...) et préparation de salle pour l'activité LinuxD proposé par des organismes externes.</p>
+                                                        </div>
+                                                        <!-- Fin d'une expérience -->
+                                                        <!-- Debut d'une expérience -->
+                                                        <div class="exp wow fadeIn" data-wow-duration="2s" data-wow-delay="0s">
+                                                            <div class="hgroup">
+                                                                <h4>Etudiant - Avieta SA</h4>
+                                                                <h6><i class="icon-calendar"></i>Juillet 2017</h6>
+                                                            </div>
+                                                            <p>Travail en tant qu'étudiant au sein de l'équipe de Avieta SA. Travail ayant pour tâche de fabriquer des gaufres de différents types de manière industrielle pour des revendeurs internationaux.</p>
+                                                        </div>
+                                                        <!-- Fin d'une expérience -->
+                                                        <!-- Debut d'une expérience -->
+                                                        <div class="exp wow fadeIn" data-wow-duration="2s" data-wow-delay="0s">
+                                                            <div class="hgroup">
+                                                                <h4>Aide-Moniteur - ASBL Vive Le Sport</h4>
+                                                                <h6><i class="icon-calendar"></i>Juillet et Août 2017</h6>
+                                                            </div>
+                                                            <p>Travail de fin de formation en tant qu'aide moniteur pour des enfants de 4 à 14 ans dans un hall omnisports organisant des stages multisport.
+                                                            </p>
+                                                        </div>
+                                                        <!-- Fin d'une expérience -->
+                                                        <!-- Debut d'une expérience -->
+                                                        <div class="exp wow fadeIn" data-wow-duration="2s" data-wow-delay="0s">
+                                                            <div class="hgroup">
+                                                                <h4>Etudiant - Avieta SA</h4>
+                                                                <h6><i class="icon-calendar"></i>Juillet et Août 2016</h6>
+                                                            </div>
+                                                            <p>Travail en tant qu'étudiant au sein de l'équipe de Avieta SA. Travail ayant pour tâche de fabriquer des gaufres de différents types de manière industrielle pour des revendeurs internationaux.</p>
+                                                        </div>       
+                                                        <!-- Fin d'une expérience -->
+                                                        <!-- Debut d'une expérience -->
+                                                        <div class="exp wow fadeIn" data-wow-duration="2s" data-wow-delay="0s">
+                                                            <div class="hgroup">
+                                                                <h4>...</h4>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Fin d'une expérience -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fin du contenu des expériences professionnel -->
+                                <!-- Debut du titre du parcours scolaire -->
+                                <div class="main-title">
+                                    <h1>Scolarité</h1>
+                                    <div class="divider">
+                                        <div class="zigzag large clearfix " data-svg-drawing="yes">
+                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	                                           <path d="M1.357,12.26 10.807,2.81 20.328,12.332 29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fin du titre du parcours scolaire -->
+                                <!-- Debut du contenu du parcours scolaire -->
+                               <div class="content">
+                                    <div class="block-content ">
+                                        <div class="timeline education">
+                                            <div class="row ">
+                                                <div class="col-md-12">
+                                                    <div class="exp-holder margTop">
+                                                        <!-- Debut d'une formation -->
+                                                        <div class="exp wow fadeIn" data-wow-duration="2s" data-wow-delay="0s">
+                                                            <div class="hgroup">
+                                                                <h4>Haute Ecole en Hainaut (ISIMs)</h4>
+                                                                <h6><i class="icon-calendar"></i>Sept 2016 - <span class="current">Maintenant</span></h6>
+                                                            </div>
+                                                            <p>Bachelier en informatique réseaux et systèmes</p>
+                                                        </div>
+                                                        <!-- Fin d'une formation -->
+                                                        <!-- Debut d'une formation -->
+                                                        <div class="exp wow fadeIn" data-wow-duration="2s" data-wow-delay="0s">
+                                                            <div class="hgroup">
+                                                                <h4>ITCF Henri Maus</h4>
+                                                                <h6><i class="icon-calendar"></i>Sept 2014 - Juin 2016</h6>
+                                                            </div>
+                                                            <p>Technique de qualification en informatique réseaux et systèmes.</p>
+                                                        </div>
+                                                        <!-- Fin d'une formation -->
+                                                        <!-- Debut d'une formation -->
+                                                        <div class="exp wow fadeIn" data-wow-duration="2s" data-wow-delay="0s">
+                                                            <div class="hgroup">
+                                                                <h4>Institut Sainte Marie de Huy</h4>
+                                                                <h6><i class="icon-calendar"></i>Janvier - Juin 2014</h6>
+                                                            </div>
+                                                            <p>Technique de transition orientation social</p>
+                                                        </div>
+                                                        <!-- Fin d'une formation -->
+                                                        <!-- Debut d'une formation -->
+                                                        <div class="exp wow fadeIn" data-wow-duration="2s" data-wow-delay="0s">
+                                                            <div class="hgroup">
+                                                                <h4>Institut Sainte Marie de Huy</h4>
+                                                                <h6><i class="icon-calendar"></i>Sept 2010 - Décembre 2013</h6>
+                                                            </div>
+                                                            <p>Étude secondaire général avec option sciences forte</p>
+                                                        </div>
+                                                        <!-- Fin d'une formation -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fin du contenu du parcours scolaire -->
+                                <!-- Debut du titre de mes hobbys -->
+                                <div class="main-title">
+                                    <h1>Mes Hobbies</h1>
+                                    <div class="divider">
+                                        <div class="zigzag large clearfix " data-svg-drawing="yes">
+                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	                                           <path d="M1.357,12.26 10.807,2.81 20.328,12.332 29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fin du titre de mes hobbys -->
+                                <!-- Debut du contenu de mes hobbys -->
+                                <div class="content">
+                                    <div class="block-content ">
+                                        <div class="services">
+                                            <div class="row ">
+                                                <div class="block service tCenter">
+                                                    <div class="col-md-4">
+                                                        <div class="ico wow flipInY" data-wow-duration="2s" data-wow-delay="0s">
+                                                            <i class="icon-lifebuoy"></i>
+                                                        </div>
+                                                        <div class="det wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
+                                                            <h3>Dépannage</h3>
+                                                            <p>Toujours disponible pour aider mes proches ou approfondir mes connaissances informatiques.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="ico"></div>
+                                                        <div class="det"></div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="ico wow flipInY" data-wow-duration="2s" data-wow-delay="0.4s">
+                                                            <i class="icon-print-1"></i>
+                                                        </div>
+                                                        <div class="det wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
+                                                            <h3>Impression et gravure</h3>
+                                                            <p>Toujours à la recherche de connaissance j'occupe une partie de mon temps à faire des impressions 3D et de la gravure laser sur mon ancien lieu de stage.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="divider-m tCenter margTSmall margBSmall clearfix">
+                                                    <div class="col-md-12">
+                                                        <div class="zigzag medium clearfix" data-svg-drawing="yes">
+                                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="45" height="5" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+				                                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332	29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+				                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row ">
+                                                <div class="block service tCenter">
+                                                    <div class="col-md-4 wow flipInY" data-wow-duration="2s" data-wow-delay="0.8s">
+                                                        <div class="ico">
+                                                            <i class="icon-monitor"></i>
+                                                        </div>
+                                                        <div class="det wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">
+                                                            <h3>WebMaster</h3>
+                                                            <p>Je réalise des sites web afin de m'entraîner au développement et à de nouvelles technologies.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="ico"></div>
+                                                        <div class="det"></div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="ico">
+                                                            <i class="icon-tools wow flipInY" data-wow-duration="2s" data-wow-delay="1.2s"></i>
+                                                        </div>
+                                                        <div class="det wow fadeIn" data-wow-duration="2s" data-wow-delay="1.4s">
+                                                            <h3>Dévelopement</h3>
+                                                            <p>Je réalise différentes applications afin d'approfondir mes connaissances en Windev</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fin du contenu de mes hobbys -->
+                                <!-- Debut du titre des avis -->
+                                <div class="main-title">
+                                    <h1>Avis me concernant</h1>
+                                    <div class="divider">
+                                        <div class="zigzag large clearfix " data-svg-drawing="yes">
+                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	                                           <path d="M1.357,12.26 10.807,2.81 20.328,12.332 29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fin du titre des avis -->
+                                <!-- Debut du contenu des avis -->
+                                <div class="content">
+                                    <div class="block-content">
+                                        <div class="testimonials">
+                                            <div class="row ">
+                                                <div class="col-md-12">
+                                                    <div class="testi clearfix wow fadeIn" data-wow-duration="2s">
+                                                        <ul id="testimonial-carousel">
+                                                            <li>
+                                                                <div class="block-quote">
+                                                                    <div class="block-img">
+                                                                        <img alt="" src="style/img/testimonial/1.jpg">
+                                                                    </div>
+                                                                    <div class="block-icon">
+                                                                        <i class="icon-quote"></i>
+                                                                    </div>
+                                                                    <h3 class="block-profile">
+                                                                        Michel Jadot 
+                                                                        <span> Coordinateur / EPN de Huy</span>
+                                                                    </h3>
+                                                                    <blockquote>
+                                                                        Plusieurs variations de Lorem Ipsum peuvent être trouvées ici ou là, mais la majeure partie d'entre elles a été altérée par l'addition d'humour ou de mots aléatoires qui ne ressemblent pas une seconde à du texte standard. Si vous voulez utiliser un passage du Lorem Ipsum, vous devez être sûr qu'il n'y a rien d'embarrassant caché dans le texte
+                                                                    </blockquote>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="block-quote">
+                                                                    <div class="block-img">
+                                                                        <img alt="" src="style/img/testimonial/2.jpg">
+                                                                    </div>
+                                                                    <div class="block-icon">
+                                                                        <i class="icon-quote"></i>
+                                                                    </div>
+                                                                    <h3 class="block-profile">
+                                                                        Nom Prenom
+                                                                        <span> Poste / Société</span>
+                                                                    </h3>
+                                                                    <blockquote>
+                                                                        Plusieurs variations de Lorem Ipsum peuvent être trouvées ici ou là, mais la majeure partie d'entre elles a été altérée par l'addition d'humour ou de mots aléatoires qui ne ressemblent pas une seconde à du texte standard. Si vous voulez utiliser un passage du Lorem Ipsum, vous devez être sûr qu'il n'y a rien d'embarrassant caché dans le texte
+                                                                    </blockquote>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fin du contenu des avis -->
+                                <!-- Debut des boutons -->
+                                <div class="button ofsInTop tCenter">
+                                    <div class="divider">
+                                        <div class="zigzag large clearfix " data-svg-drawing="yes">
+                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332	29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col-md-12">
+                                            <a class="but opc-1 ico" href="#">Télécharger mon CV</a>
+                                            <a class="but opc-2 ico" href="javascript:window.print()">Imprimer mon CV</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fin des boutons -->
+                            </div>
+                            <!-- Fin de A propos -->
+                        </section>
+                        <!-- Fin de la section a propos -->
+                        <!-- Debut de la section portfolio -->
+                        <section id="portfolio" class="ofsInBottom">
+                            <div class="portfolio">
+                                <!-- Debut du titre du portfolio -->
+                                <div class="main-title">
+                                    <h1>Mes Travaux</h1>
+                                    <div class="divider">
+                                        <div class="zigzag large clearfix " data-svg-drawing="yes">
+                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332	29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fin du titre du portfolio -->
+                                <!-- Debut du contenu du portfolio -->
+                                <div class="content">
+                                    <div class="block-content ">
+                                        <div class="works">
+                                            <div class="row">
+                                                <div class="block-filter tCenter">
+                                                    <ul id="category" class="filter">
+                                                        <li><a data-filter="all" href="#" class="active">Tous</a></li>
+                                                        <li><a data-filter="gravure" href="#">Gravure Laser</a></li>
+                                                        <li><a data-filter="impression" href="#">Impression 3D</a></li>
+                                                        <li><a data-filter="photo" href="#">Photographie</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="divider-m tCenter margTSSmall margBSmall clearfix">
+                                                    <div class="col-md-12">
+                                                        <div class="zigzag medium clearfix " data-svg-drawing="yes">
+                                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="45" height="5" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332	29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <ul class="work">
+                                                    <!-- Debut d'un item -->
+                                                    <li class="col-md-4 wow flipInX" data-wow-duration="2s">
+                                                        <div class="item gravure">
+                                                            <a class="box" href="style/img/portfolio/1.jpg">
+                                                                <div class="desc">
+                                                                    <h3 class="proj-desc">Plaque EPN Herstal
+                                                                        <span class="zigzag work clearfix " data-svg-drawing="yes">
+                                                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                                                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332	29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                                                            </svg>
+                                                                        </span>
+                                                                        <span>Gravure Laser</span>
+                                                                    </h3>
+                                                                </div>
+                                                                <img alt="" src="style/img/portfolio/1.jpg">
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <!-- Fin d'un item -->
+                                                    <!-- Debut d'un item -->
+                                                    <li class="col-md-4 wow flipInY" data-wow-duration="2s">
+                                                        <div class="item impression">
+                                                            <a class="box" href="style/img/portfolio/2.jpg">
+                                                                <div class="desc">
+                                                                    <h3 class="proj-desc">Sifflet
+                                                                        <span class="zigzag work clearfix " data-svg-drawing="yes">
+                                                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                                                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332	29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                                                            </svg>
+                                                                        </span>
+                                                                        <span>Impression 3D</span>
+                                                                    </h3>
+                                                                </div>
+                                                                <img src="style/img/portfolio/2.jpg" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <!-- Fin d'un item -->
+                                                    <!-- Debut d'un item -->
+                                                    <li class="col-md-4 wow flipInX" data-wow-duration="2s">
+                                                        <div class="item gravure">
+                                                            <a class="box" href="style/img/portfolio/3.jpg">
+                                                                <div class="desc">
+                                                                    <h3 class="proj-desc">Porte clé Plexi
+                                                                        <span class="zigzag work clearfix " data-svg-drawing="yes">
+                                                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                                                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332	29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                                                            </svg>
+                                                                        </span>
+                                                                        <span>Gravure Laser</span>
+                                                                    </h3>
+                                                                </div>
+                                                                <img alt="" src="style/img/portfolio/3.jpg">
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <!-- Fin d'un item -->
+                                                    <!-- Debut d'un item -->
+                                                    <li class="col-md-4 wow flipInY" data-wow-duration="2s">
+                                                        <div class="item photo">
+                                                            <a class="box" href="style/img/portfolio/4.jpg">
+                                                                <div class="desc">
+                                                                    <h3 class="proj-desc">Gare de calatraja
+                                                                        <span class="zigzag work clearfix " data-svg-drawing="yes">
+                                                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                                                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332	29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                                                            </svg>
+                                                                        </span>
+                                                                        <span>Photographie</span>
+                                                                    </h3>
+                                                                </div>
+                                                                <img alt="" src="style/img/portfolio/4.jpg">
+                                                            </a>
+
+                                                        </div>
+                                                    </li>
+                                                    <!-- Fin d'un item -->
+                                                    <!-- Debut d'un item -->
+                                                    <li class="col-md-4 wow flipInX" data-wow-duration="2s">
+                                                        <div class="item gravure">
+                                                            <a class="box" href="style/img/portfolio/5.jpg">
+                                                                <div class="desc">
+                                                                    <h3 class="proj-desc">Yin Yang
+                                                                        <span class="zigzag work clearfix " data-svg-drawing="yes">
+                                                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                                                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332 29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                                                            </svg>
+                                                                        </span>
+                                                                        <span>Gravure Laser</span>
+                                                                    </h3>
+                                                                </div>
+                                                                <img alt="" src="style/img/portfolio/5.jpg">
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <!-- Fin d'un item -->
+                                                    <!-- Debut d'un item -->
+                                                    <li class="col-md-4 wow flipInY" data-wow-duration="2s">
+                                                        <div class="item impression">
+                                                            <a class="box" href="style/img/portfolio/6.jpg">
+                                                                <div class="desc">
+                                                                    <h3 class="proj-desc">Scan 3D d'une personne
+                                                                        <span class="zigzag work clearfix " data-svg-drawing="yes">
+                                                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                                                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332	29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                                                            </svg>
+                                                                        </span>
+                                                                        <span>Impression 3D</span>
+                                                                    </h3>
+                                                                </div>
+                                                                <img alt="" src="style/img/portfolio/6.jpg">
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <!-- Fin d'un item -->
+                                                    <!-- Debut d'un item -->
+                                                    <li class="col-md-4 wow flipInX" data-wow-duration="2s">
+                                                        <div class="item photo">
+                                                            <a class="box" href="style/img/portfolio/7.jpg">
+                                                                <div class="desc">
+                                                                    <h3 class="proj-desc">Street View
+                                                                        <span class="zigzag work clearfix " data-svg-drawing="yes">
+                                                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                                                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332	29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                                                            </svg>
+                                                                        </span>
+                                                                        <span>Photographie</span>
+                                                                    </h3>
+                                                                </div>
+                                                                <img alt="" src="style/img/portfolio/7.jpg">
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <!-- Fin d'un item -->
+                                                    <!-- Debut d'un item -->
+                                                    <li class="col-md-4 wow flipInY" data-wow-duration="2s">
+                                                        <div class="item impression">
+                                                            <a href="style/img/portfolio/8.jpg">
+                                                                <div class="desc">
+                                                                    <h3 class="proj-desc">Porte clé EPN
+                                                                        <span class="zigzag work clearfix " data-svg-drawing="yes">
+                                                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                                                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332	29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                                                            </svg>
+                                                                        </span>
+                                                                        <span>Impression 3D</span>
+                                                                    </h3>
+                                                                </div>
+                                                                <img alt="" src="style/img/portfolio/8.jpg">
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <!-- Fin d'un item -->
+                                                    <!-- Debut d'un item -->
+                                                    <li class="col-md-4 wow flipInX" data-wow-duration="2s">
+                                                        <div class="item gravure">
+                                                            <a class="box" href="style/img/portfolio/9.jpg">
+                                                                <div class="desc">
+                                                                    <h3 class="proj-desc">Test Jeans
+                                                                        <span class="zigzag work clearfix " data-svg-drawing="yes">
+                                                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                                                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332	29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                                                            </svg>
+                                                                        </span>
+                                                                        <span>Gravure Laser</span>
+                                                                    </h3>
+                                                                </div>
+                                                                <img alt="" src="style/img/portfolio/9.jpg">
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <!-- Fin d'un item -->
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <!-- Fin du contenu du portfolio -->
+                                <!-- Debut des boutons -->
+                                <div class="button ofsInTop tCenter">
+                                    <div class="divider">
+                                        <div class="zigzag large clearfix " data-svg-drawing="yes">
+                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332	29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col-md-12">
+                                            <a class="but opc-1 ico" href="cv.pdf">Télécharger mon CV</a>
+                                            <a class="but opc-2 ico" href="javascript:window.print(cv.pdf)">Imprimer mon CV</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fin des boutons -->
+                            </div>
+                        </section>
+                        <!-- Fin de la section du portfolio -->
+                        <!-- Debut de la section contact -->
+                    	<section id="contact" class="bgWhite ofsInBottom">
+                        	<div class="contact">
+                                <!-- Debut du titre de la carte -->
+								<div class="main-title">
+								    <h1>Carte</h1>
+									<div class="divider">
+									   <div class="zigzag large clearfix "  data-svg-drawing="yes" >
+                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332 29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fin du titre de la carte -->
+                                <!-- Debut de la carte -->
+                                <div class="content">
+                                    <div class="block-content ">
+                                        <div class="block-map">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div id="map">
+                                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2535.145217947182!2d5.187640516153457!3d50.550069379489216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c1a83c4c200a5f%3A0x1612c33ccc36c68!2sRue+Alphonse+Nicolas+523%2C+4520+Wanze!5e0!3m2!1sfr!2sbe!4v1526589915690" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fin de la carte -->
+                        		<!-- Debut du titre des informations de contact -->
+                            	<div class="main-title">
+                                	<h1>Informations de contact</h1>
+                                	<div class="divider">
+                                    	<div class="zigzag large clearfix " data-svg-drawing="yes">
+                                        	<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+												<path d="M1.357,12.26 10.807,2.81 20.328,12.332	29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+											</svg>
+                                    	</div>
+                                	</div>
+                            	</div>
+                            	<!-- Fin du titre des informations de contact -->
+                            	<!-- Debut du contenu des informations de contact -->
+                            	<div class="content">
+	                                <div class="block-content ">
+                                    	<div class="block-info">
+	                                        <div class="row">
+                                            	<div class="col-md-12">
+                                                	<div class="info-holder margTMedium wow flipInX" data-wow-duration="2s">
+                                                    	<div class="address-info">
+                                                        	<i class="icon-location"></i>
+                                                        	<p>Sam Ronvaux <br/> Rue Alphonse Nicolas,523<br/>4520 Moha, Belgique</p>
+                                                    	</div>
+                                                    	<div class="contact-info tCenter">
+                                                        	<ul>
+                                                            	<li>
+                                                            		<a href="mailto:samronvaux@gmail.com">
+                                                                		<div class="ico"><i class="icon-mail"></i></div>
+                                                                		<p>samronvaux@gmail.com</p>
+                                                                	</a>
+                                                            	</li>
+                                                            	<li>
+                                                            		<a href="tel:0032491078668">
+                                                                		<div class="ico"><i class="icon-phone"></i></div>
+                                                                		<p>+32 491 07.86.68</p>
+                                                                	</a>
+                                                            	</li>
+                                                            	<li>
+                                                            		<a href="https://be.linkedin.com/in/sam-ronvaux" target="_blank">
+                                                                		<div class="ico"><i class="icon-link"></i></div>
+                                                                		<p>Sam Ronvaux</p>
+                                                                	</a>
+                                                            	</li>
+                                                        	</ul>
+                                                    	</div>
+                                                	</div>
+                                            	</div>
+                                        	</div>
+                                    	</div>
+                                	</div>
+                            	</div>
+                            	<!-- Fin du contenu des informations de contact -->
+                            	<!-- Debut du titre du formulaire -->
+                            	<div class="main-title">
+                                	<h1>Formulaire de contact</h1>
+                                	<div class="divider">
+                                    	<div class="zigzag large clearfix " data-svg-drawing="yes">
+                                       		<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+												<path d="M1.357,12.26 10.807,2.81 20.328,12.332	29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+											</svg>
+                                    	</div>
+                                	</div>
+                            	</div>
+                            	<!-- Fin du titre du formulaire -->
+	                            <!-- Debut du contenu du formulaire -->
+                            	<div class="content">
+                                	<div class="block-content ">
+                                    	<div class="block-contact">
+                                        	<div class="row">
+                                            	<div class="col-md-12">
+                                            		<!-- Debut du formulaire -->
+                                                	<form class="contact-form wow flipInY" data-wow-duration="2s" method="post" action="pasdephp.php">
+                                                    	<div class="input-columns clearfix">
+                                                            <div class="column1">
+                                                                <div class="column-inner">
+                                                                    <input type="text" placeholder="Prénom" value="" id="firstname" name="firstname" autocomplete="given-name" oninput="this.value = this.value.charAt(0).toUpperCase() + this.value.substr(1);">
+                                                                </div>
+                                                            </div>
+                                                            <div class="column2">
+                                                                <div class="column-inner">
+                                                                    <input type="text" placeholder="Nom de famille" value="" id="name" name="name" autocomplete="family-name" oninput="this.value = this.value.charAt(0).toUpperCase() + this.value.substr(1);">
+                                                                </div>
+                                                            </div>
+                                                           	<input type="text" placeholder="Email" value="" id="email" name="email" autocomplete="email" oninput="this.value = this.value.toLowerCase();">
+                                                    	</div>
+                                                    	<input type="text" placeholder="Sujet" value="" id="subject" name="sujet" oninput="this.value = this.value.charAt(0).toUpperCase() + this.value.substr(1);">
+                                                    	<textarea name="message" placeholder="Message" id="message" cols="45" rows="10" oninput="this.value = this.value.charAt(0).toUpperCase() + this.value.substr(1);" ></textarea>
+                                                    	<input type="submit" value="Envoyer" class="but opc-2 submit">
+                                                	</form>
+                                                	<!-- Fin du formulaire -->
+                                                	<!-- Debut de valeur de retour du formulaire -->
+                                                <!-- (Inactif dans cette version)
+                                                	<div id="success">
+                                                    	<h2>Votre message a bien été envoyé!</h2>
+                                                	</div>
+                                                	<div id="error">
+                                                    	<h2>Votre message n'a pas pus etre envoyé...</h2>
+                                                	</div>
+                                                -->
+                                                	<!-- Fin de valeur de retour du formulaire -->
+                                            	</div>
+                                        	</div>
+                                    	</div>
+                                	</div>
+                            	</div>
+                            	<!-- Fin du contenu du formulaire -->
+                        	</div>
+                    	</section>
+                    	<!-- Fin de la section de contact -->
+                	</div>
+					<!-- Fin de la colonne de droite (informations) -->
+                    <div class="BackToTop wow fadeIn" data-wow-duration="2s"></div>
+            	</div>
+	        </div>
+	        <!-- Fin du container Français -->
+<!-- ########################################################################################################################################### -->
+            <!-- Debut du Container Anglais -->
+            <div id="lang-en" class="container">
+                <div class="row ">
+                    <!-- Debut de la colonne de gauche (profile) -->
+                    <div class="col-md-3 nopr left-content">
+                        <!-- Debut du Header -->
+                        <header id="header">
+                            <div class="main-header">
+                                <!-- Debut de l'image de profile -->
+                                <figure class="img-profile pushup">
+                                    <img src="style/img/profile.jpg" alt="" />
+                                        <figcaption class="name-profile">
+                                            <span>Sam Ronvaux</span>
+                                        </figcaption>
+                                </figure>
+                                <!-- Fin de l'image de profile -->
+                                <!-- Debut du menu de navigation -->
+                                <nav id="main-nav" class="main-nav clearfix tabbed">
+                                    <ul>
+                                        <li><a href="#about"><i class="icon-user"></i>About me</a></li>
+                                        <li><a href="#portfolio"><i class="icon-camera"></i>Portfolio</a></li>
+                                        <li><a href="#contact"><i class="icon-phone"></i>Contact</a></li>
+                                    </ul>
+                                </nav>
+                                <!-- Fin du menu de navigation -->
+                            </div>
+                            <!-- Debut des icones de réseaux sociaux -->
+                            <div class="bottom-header ofsTSmall ofsBSmall tCenter">
+                                <ul class="social">
+                                    <li><a href="https://www.facebook.com/sam.rnax" target="_blank"><i class="icon-facebook"></i></a></li>
+                                    <li><a href="https://github.com/Syr4Z" target="_blank"><i class="icon-github"></i></a></li>
+                                    <li><a href="https://be.linkedin.com/in/sam-ronvaux" target="_blank"><i class="icon-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- Fin des icones de réseaux sociaux -->
+                        </header>
+                        <!-- Fin du Header-->
+                    </div>
+                    <!-- Fin de la colonne de gauche (profile) -->
+                    <!-- Debut de la colonne de droite (informations) -->
+                    <div class="col-md-9 right-content">
+                        <!-- Debut de la section a propos -->
+                        <section id="about" class="ofsInBottom">
+                            <!-- Debut de A propos -->
+                            <div class="about">
+                                <!-- Debut du titre des informations personnel -->
+                                <div class="main-title">
+                                    <h1>Qui suis-je ?</h1>
+                                    <div class="divider">
+                                        <div class="zigzag large clearfix " data-svg-drawing="yes">
+                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332	29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fin du titre des informations personnel -->
+                                <!-- Debut du contenu des informations personnel -->
+                                <div class="content">
+                                    <!-- Debut des colonnes de présentation -->
+                                    <div class="block-content margBSmall">
+                                        <div class=" profile margBSmall">
+                                            <h1>Sam Ronvaux</h1>
+                                            <h3>Étudiant en informatique</h3>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h4>
+                                                    Qui suis-je ?
+                                                </h4>
+                                                <div id="t">
+                                                    <del>Il était une fois un jeune étudia</del>
+                                                    Je suis un jeune étudiant âgé de 20 ans actuellement en bachelor Informatique Orientation Réseaux. Je suis quelqu'un de passionné par les nouvelles technologies et qui aime découvrir de nouveaux domaines. Récemment, j'ai pû découvrir une partie des choses que l'on peut réaliser avec l'impression 3D. J'ai profité de cette occasion pour en apprendre plus sur l'utilisation d'une graveuse/découpeuse laser. Cela m'a permis par la suite de partager avec des jeunes d'une dizaine d'années les connaissances que j'ai pû acquérir dans ce domaine.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Fin des colonnes de présentation -->
+                                    <!-- Debut des informations personnel -->
+                                    <div class="block-content">
+                                        <div class="info">
+                                            <div class="row">
+                                                <!-- Debut de la colonne 1 -->
+                                                <div class="col-md-6">
+                                                    <ul class="info-list clearfix wow slideInLeft" data-wow-duration="1.5s" data-wow-delay="0s">
+                                                        <li><span class="inf">Prénom :</span> <span class="value"> Sam </span></li>
+                                                        <li><span class="inf">Âge :</span> <span class="value"> 20 ans </span></li>
+                                                        <li><span class="inf">Email :</span> <span class="value"><a class="value" href="mailto:samronvaux@gmail.com">samronvaux[at]gmail.com</a></span></li>
+                                                    </ul>
+                                                </div>
+                                                <!-- Fin de la colonne 1 -->
+                                                <!-- Debut de la colonne 2 -->
+                                                <div class="col-md-6">
+                                                    <ul class="info-list clearfix wow slideInRight" data-wow-duration="1.5s" data-wow-delay="0s">
+                                                        <li><span class="inf">Nom de famille :</span> <span class="value">Ronvaux</span></li>
+                                                        <li><span class="inf">LinkedIn :</span> <span class="value"><a class="value" href="https://be.linkedin.com/in/sam-ronvaux" target="_blank">Sam Ronvaux</a></span></li>
+                                                        <li><span class="inf">N° de téléphone :</span> <span class="value"><a class="value" href="tel:0032491078668">+32 491 07.86.68</a></span></li>
+                                                    </ul>
+                                                </div>
+                                                <!-- Fin de la colonne 2 -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Fin des informations personnel -->
+                                </div>
+                                <!-- Fin du contenu des informations personnel -->
+                                <!-- Debut du titre des compétences professionnel -->
+                                <div class="main-title">
+                                    <h1>Compétences professionnelles</h1>
+                                    <div class="divider">
+                                        <div class="zigzag large clearfix " data-svg-drawing="yes">
+                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	                                           <path d="M1.357,12.26 10.807,2.81 20.328,12.332 29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fin du titre des compétences professionnel -->
+                                <!-- Debut du contenu  des compétences professionnel -->
+                                <div class="content">
+                                    <!-- Debut des compétences de dévelopement -->
+                                    <div class="block-content margBMedium">
+                                        <div class=" skill dev">
+                                            <div class="row">
+                                                <div class="vc">
+                                                    <div class="col-md-11">
+                                                        <ul class="skills-list clearfix">
+                                                            <li class="wow slideInLeft">
+                                                                <h4>HTML/CSS</h4>
+                                                                <div class="progress">
+                                                                    <div class="percentage">
+                                                                        85%
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="wow slideInLeft">
+                                                                <h4>WINDEV</h4>
+                                                                <div class="progress">
+                                                                    <div class="percentage">
+                                                                        80%
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="wow slideInLeft">
+                                                                <h4>PHP/MYSQL</h4>
+                                                                <div class="progress">
+                                                                    <div class="percentage">
+                                                                        75%
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-1">
+                                                        <div class="title dev wow fadeIn" data-wow-duration="2s">
+                                                            <span>Développement</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Fin des compétences de dévelopement -->
+                                    <!-- Debut des compétences personnel -->
+                                    <div class="block-content margBMedium">
+                                        <div class=" skill prs">
+                                            <div class="row ">
+                                                <div class="vc">
+                                                    <div class="col-md-11">
+                                                        <ul class="skills-list clearfix">
+                                                            <li class="wow slideInLeft">
+                                                                <h4>Prise de responsabilités</h4>
+                                                                <div class="progress">
+                                                                    <div class="percentage">
+                                                                        90%
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="wow slideInLeft">
+                                                                <h4>Faculté de compréhension</h4>
+                                                                <div class="progress">
+                                                                    <div class="percentage">
+                                                                        85%
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="wow slideInLeft">
+                                                                <h4>Prise d'initiatives</h4>
+                                                                <div class="progress">
+                                                                    <div class="percentage">
+                                                                        90%
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-1">
+                                                        <div class="title prs wow fadeIn" data-wow-duration="2s">
+                                                            <span>Atouts personnel</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Fin des compétences personnel -->
+                                    <!-- Debut des compétences de langues -->
+                                    <div class="block-content margBMedium">
+                                        <div class=" skill dev">
+                                            <div class="row">
+                                                <div class="vc">
+                                                    <div class="col-md-11">
+                                                        <ul class="skills-list clearfix">
+                                                            <li class="wow slideInLeft">
+                                                                <h4>Français</h4>
+                                                                <div class="progress">
+                                                                    <div class="percentage">
+                                                                        99%
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="wow slideInLeft">
+                                                                <h4>Anglais</h4>
+                                                                <div class="progress">
+                                                                    <div class="percentage">
+                                                                        75%
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="wow slideInLeft">
+                                                                <h4>Néerlandais</h4>
+                                                                <div class="progress">
+                                                                    <div class="percentage">
+                                                                        20%
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-1">
+                                                        <div class="title dev wow fadeIn" data-wow-duration="2s">
+                                                            <span>linguistique</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Fin des compétences de langues -->
+                                </div>
+                                <!-- Fin du contenu des compétences personnel -->
+                                <!-- Debut du titre de mes diplomes -->
+                                <div class="main-title">
+                                    <h1>Mes Diplômes/Certifications</h1>
+                                    <div class="divider">
+                                        <div class="zigzag large clearfix " data-svg-drawing="yes">
+                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	                                           <path d="M1.357,12.26 10.807,2.81 20.328,12.332 29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fin du titre de mes diplomes -->
+                                <!-- Debut du contenu de mes diplomes -->
+                                <div class="content">
+                                    <div class="block-content ">
+                                        <div class="timeline education">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="exp-holder margTop">
+                                                    	<!-- Debut d'un diplome -->
+                                                        <div class="exp wow fadeIn" data-wow-duration="2s" data-wow-delay="0s">
+                                                            <div class="hgroup">
+                                                                <h4>Aide Moniteur - ASBL Vive le sport</h4>
+                                                                <h6><i class="icon-calendar"></i>Aout 2016</h6>
+                                                            </div>
+                                                            <p>Réussite de ma formation en tant aide moniteur sportif auprès de l'ASBL vive le sport.</p>
+                                                        </div>
+                                                        <!-- Fin d'un diplome -->
+                                                        <!-- Debut d'un diplome -->
+                                                        <div class="exp wow fadeIn" data-wow-duration="2s" data-wow-delay="0s">
+                                                            <div class="hgroup">
+                                                                <h4>CESS - ITCF Henri Maus</h4>
+                                                                <h6><i class="icon-calendar"></i>Juin 2016</h6>
+                                                            </div>
+                                                            <p>Réussite de mon Certificat d'enseignement secondaire supérieur au sein de l'ITCF Henri Maus.</p>
+                                                        </div>
+                                                        <!-- Fin d'un diplome -->
+                                                        <!-- Debut d'un diplome -->
+                                                        <div class="exp wow fadeIn" data-wow-duration="2s" data-wow-delay="0s">
+                                                            <div class="hgroup">
+                                                                <h4>Microsoft Windows 2012 R2 - Technofutur TIC</h4>
+                                                                <h6><i class="icon-calendar"></i>Juin 2016</h6>
+                                                            </div>
+                                                            <p>Fin de ma formation Microsoft Windows 2012 R2 dans le cadre d'une formation fournie par l'ITCF Henri Maus et donnée par un employé de chez MGC pour Technofutur TIC.
+                                                            </p>
+                                                        </div>
+                                                        <!-- Fin d'un diplome -->
+                                                        <!-- Debut d'un diplome -->
+                                                        <div class="exp wow fadeIn" data-wow-duration="2s" data-wow-delay="0s">
+                                                            <div class="hgroup">
+                                                                <h4>HTML 5 / CSS3 - Technofutur TIC</h4>
+                                                                <h6><i class="icon-calendar"></i>Juin 2015</h6>
+                                                            </div>
+                                                            <p>Réussite de ma formation HTML5 et CSS3 dans le cadre d'une formation fournie par l'ITCF Henri Maus et donnée par des formateurs Technofutur TIC.</p>
+                                                        </div>
+                                                        <!-- Fin d'un diplome -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fin du contenu de mes diplomes -->
+                                <!-- Debut du titre des expériences professionnel -->
+                                <div class="main-title">
+                                    <h1>Parcours professionnelles</h1>
+                                    <div class="divider">
+                                        <div class="zigzag large clearfix " data-svg-drawing="yes">
+                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	                                           <path d="M1.357,12.26 10.807,2.81 20.328,12.332 29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+	                                       </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fin du titre des expériences professionnel -->
+                                <!-- Debut du contenu des expériences professionnel -->
+                                <div class="content">
+                                    <div class="block-content">
+                                        <div class="timeline experience">
+                                            <div class="row ">
+                                                <div class="col-md-12">
+                                                    <div class="exp-holder margTop">
+                                                        <!-- Debut d'une expérience -->
+                                                        <div class="exp wow fadeIn" data-wow-duration="2s" data-wow-delay="0s">
+                                                            <div class="hgroup">
+                                                                <h4>Bénévole - Espace Public Numérique</h4>
+                                                                <h6><i class="icon-calendar"></i>Du 02 Mars au 06 Mars 2018</h6>
+                                                            </div>
+                                                            <p>Aide lors de stage à mon ancien lieu de stage. Test de nouvelles machines (graveuse laser, imprimante 3D, ...) et préparation de salle pour l'activité LinuxD proposé par des organismes externes.</p>
+                                                        </div>
+                                                        <!-- Fin d'une expérience -->
+                                                        <!-- Debut d'une expérience -->
+                                                        <div class="exp wow fadeIn" data-wow-duration="2s" data-wow-delay="0s">
+                                                            <div class="hgroup">
+                                                                <h4>Etudiant - Avieta SA</h4>
+                                                                <h6><i class="icon-calendar"></i>Juillet 2017</h6>
+                                                            </div>
+                                                            <p>Travail en tant qu'étudiant au sein de l'équipe de Avieta SA. Travail ayant pour tâche de fabriquer des gaufres de différents types de manière industrielle pour des revendeurs internationaux.</p>
+                                                        </div>
+                                                        <!-- Fin d'une expérience -->
+                                                        <!-- Debut d'une expérience -->
+                                                        <div class="exp wow fadeIn" data-wow-duration="2s" data-wow-delay="0s">
+                                                            <div class="hgroup">
+                                                                <h4>Aide-Moniteur - ASBL Vive Le Sport</h4>
+                                                                <h6><i class="icon-calendar"></i>Juillet et Août 2017</h6>
+                                                            </div>
+                                                            <p>Travail de fin de formation en tant qu'aide moniteur pour des enfants de 4 à 14 ans dans un hall omnisports organisant des stages multisport.
+                                                            </p>
+                                                        </div>
+                                                        <!-- Fin d'une expérience -->
+                                                        <!-- Debut d'une expérience -->
+                                                        <div class="exp wow fadeIn" data-wow-duration="2s" data-wow-delay="0s">
+                                                            <div class="hgroup">
+                                                                <h4>Etudiant - Avieta SA</h4>
+                                                                <h6><i class="icon-calendar"></i>Juillet et Août 2016</h6>
+                                                            </div>
+                                                            <p>Travail en tant qu'étudiant au sein de l'équipe de Avieta SA. Travail ayant pour tâche de fabriquer des gaufres de différents types de manière industrielle pour des revendeurs internationaux.</p>
+                                                        </div>       
+                                                        <!-- Fin d'une expérience -->
+                                                        <!-- Debut d'une expérience -->
+                                                        <div class="exp wow fadeIn" data-wow-duration="2s" data-wow-delay="0s">
+                                                            <div class="hgroup">
+                                                                <h4>...</h4>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Fin d'une expérience -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fin du contenu des expériences professionnel -->
+                                <!-- Debut du titre du parcours scolaire -->
+                                <div class="main-title">
+                                    <h1>Scolarité</h1>
+                                    <div class="divider">
+                                        <div class="zigzag large clearfix " data-svg-drawing="yes">
+                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	                                           <path d="M1.357,12.26 10.807,2.81 20.328,12.332 29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fin du titre du parcours scolaire -->
+                                <!-- Debut du contenu du parcours scolaire -->
+                               <div class="content">
+                                    <div class="block-content ">
+                                        <div class="timeline education">
+                                            <div class="row ">
+                                                <div class="col-md-12">
+                                                    <div class="exp-holder margTop">
+                                                        <!-- Debut d'une formation -->
+                                                        <div class="exp wow fadeIn" data-wow-duration="2s" data-wow-delay="0s">
+                                                            <div class="hgroup">
+                                                                <h4>Haute Ecole en Hainaut (ISIMs)</h4>
+                                                                <h6><i class="icon-calendar"></i>Sept 2016 - <span class="current">Maintenant</span></h6>
+                                                            </div>
+                                                            <p>Bachelier en informatique réseaux et systèmes</p>
+                                                        </div>
+                                                        <!-- Fin d'une formation -->
+                                                        <!-- Debut d'une formation -->
+                                                        <div class="exp wow fadeIn" data-wow-duration="2s" data-wow-delay="0s">
+                                                            <div class="hgroup">
+                                                                <h4>ITCF Henri Maus</h4>
+                                                                <h6><i class="icon-calendar"></i>Sept 2014 - Juin 2016</h6>
+                                                            </div>
+                                                            <p>Technique de qualification en informatique réseaux et systèmes.</p>
+                                                        </div>
+                                                        <!-- Fin d'une formation -->
+                                                        <!-- Debut d'une formation -->
+                                                        <div class="exp wow fadeIn" data-wow-duration="2s" data-wow-delay="0s">
+                                                            <div class="hgroup">
+                                                                <h4>Institut Sainte Marie de Huy</h4>
+                                                                <h6><i class="icon-calendar"></i>Janvier - Juin 2014</h6>
+                                                            </div>
+                                                            <p>Technique de transition orientation social</p>
+                                                        </div>
+                                                        <!-- Fin d'une formation -->
+                                                        <!-- Debut d'une formation -->
+                                                        <div class="exp wow fadeIn" data-wow-duration="2s" data-wow-delay="0s">
+                                                            <div class="hgroup">
+                                                                <h4>Institut Sainte Marie de Huy</h4>
+                                                                <h6><i class="icon-calendar"></i>Sept 2010 - Décembre 2013</h6>
+                                                            </div>
+                                                            <p>Étude secondaire général avec option sciences forte</p>
+                                                        </div>
+                                                        <!-- Fin d'une formation -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fin du contenu du parcours scolaire -->
+                                <!-- Debut du titre de mes hobbys -->
+                                <div class="main-title">
+                                    <h1>Mes Hobbies</h1>
+                                    <div class="divider">
+                                        <div class="zigzag large clearfix " data-svg-drawing="yes">
+                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	                                           <path d="M1.357,12.26 10.807,2.81 20.328,12.332 29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fin du titre de mes hobbys -->
+                                <!-- Debut du contenu de mes hobbys -->
+                                <div class="content">
+                                    <div class="block-content ">
+                                        <div class="services">
+                                            <div class="row ">
+                                                <div class="block service tCenter">
+                                                    <div class="col-md-4">
+                                                        <div class="ico wow flipInY" data-wow-duration="2s" data-wow-delay="0s">
+                                                            <i class="icon-lifebuoy"></i>
+                                                        </div>
+                                                        <div class="det wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
+                                                            <h3>Dépannage</h3>
+                                                            <p>Toujours disponible pour aider mes proches ou approfondir mes connaissances informatiques.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="ico"></div>
+                                                        <div class="det"></div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="ico wow flipInY" data-wow-duration="2s" data-wow-delay="0.4s">
+                                                            <i class="icon-print-1"></i>
+                                                        </div>
+                                                        <div class="det wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
+                                                            <h3>Impression et gravure</h3>
+                                                            <p>Toujours à la recherche de connaissance j'occupe une partie de mon temps à faire des impressions 3D et de la gravure laser sur mon ancien lieu de stage.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="divider-m tCenter margTSmall margBSmall clearfix">
+                                                    <div class="col-md-12">
+                                                        <div class="zigzag medium clearfix" data-svg-drawing="yes">
+                                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="45" height="5" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+				                                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332	29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+				                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row ">
+                                                <div class="block service tCenter">
+                                                    <div class="col-md-4 wow flipInY" data-wow-duration="2s" data-wow-delay="0.8s">
+                                                        <div class="ico">
+                                                            <i class="icon-monitor"></i>
+                                                        </div>
+                                                        <div class="det wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">
+                                                            <h3>WebMaster</h3>
+                                                            <p>Je réalise des sites web afin de m'entraîner au développement et à de nouvelles technologies.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="ico"></div>
+                                                        <div class="det"></div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="ico">
+                                                            <i class="icon-tools wow flipInY" data-wow-duration="2s" data-wow-delay="1.2s"></i>
+                                                        </div>
+                                                        <div class="det wow fadeIn" data-wow-duration="2s" data-wow-delay="1.4s">
+                                                            <h3>Dévelopement</h3>
+                                                            <p>Je réalise différentes applications afin d'approfondir mes connaissances en Windev</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fin du contenu de mes hobbys -->
+                                <!-- Debut du titre des avis -->
+                                <div class="main-title">
+                                    <h1>Avis me concernant</h1>
+                                    <div class="divider">
+                                        <div class="zigzag large clearfix " data-svg-drawing="yes">
+                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	                                           <path d="M1.357,12.26 10.807,2.81 20.328,12.332 29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fin du titre des avis -->
+                                <!-- Debut du contenu des avis -->
+                                <div class="content">
+                                    <div class="block-content">
+                                        <div class="testimonials">
+                                            <div class="row ">
+                                                <div class="col-md-12">
+                                                    <div class="testi clearfix wow fadeIn" data-wow-duration="2s">
+                                                        <ul id="testimonial-carousel">
+                                                            <li>
+                                                                <div class="block-quote">
+                                                                    <div class="block-img">
+                                                                        <img alt="" src="style/img/testimonial/1.jpg">
+                                                                    </div>
+                                                                    <div class="block-icon">
+                                                                        <i class="icon-quote"></i>
+                                                                    </div>
+                                                                    <h3 class="block-profile">
+                                                                        Michel Jadot 
+                                                                        <span> Coordinateur / EPN de Huy</span>
+                                                                    </h3>
+                                                                    <blockquote>
+                                                                        Plusieurs variations de Lorem Ipsum peuvent être trouvées ici ou là, mais la majeure partie d'entre elles a été altérée par l'addition d'humour ou de mots aléatoires qui ne ressemblent pas une seconde à du texte standard. Si vous voulez utiliser un passage du Lorem Ipsum, vous devez être sûr qu'il n'y a rien d'embarrassant caché dans le texte
+                                                                    </blockquote>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="block-quote">
+                                                                    <div class="block-img">
+                                                                        <img alt="" src="style/img/testimonial/2.jpg">
+                                                                    </div>
+                                                                    <div class="block-icon">
+                                                                        <i class="icon-quote"></i>
+                                                                    </div>
+                                                                    <h3 class="block-profile">
+                                                                        Nom Prenom
+                                                                        <span> Poste / Société</span>
+                                                                    </h3>
+                                                                    <blockquote>
+                                                                        Plusieurs variations de Lorem Ipsum peuvent être trouvées ici ou là, mais la majeure partie d'entre elles a été altérée par l'addition d'humour ou de mots aléatoires qui ne ressemblent pas une seconde à du texte standard. Si vous voulez utiliser un passage du Lorem Ipsum, vous devez être sûr qu'il n'y a rien d'embarrassant caché dans le texte
+                                                                    </blockquote>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fin du contenu des avis -->
+                                <!-- Debut des boutons -->
+                                <div class="button ofsInTop tCenter">
+                                    <div class="divider">
+                                        <div class="zigzag large clearfix " data-svg-drawing="yes">
+                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332	29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col-md-12">
+                                            <a class="but opc-1 ico" href="#">Télécharger mon CV</a>
+                                            <a class="but opc-2 ico" href="javascript:window.print()">Imprimer mon CV</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fin des boutons -->
+                            </div>
+                            <!-- Fin de A propos -->
+                        </section>
+                        <!-- Fin de la section a propos -->
+                        <!-- Debut de la section portfolio -->
+                        <section id="portfolio" class="ofsInBottom">
+                            <div class="portfolio">
+                                <!-- Debut du titre du portfolio -->
+                                <div class="main-title">
+                                    <h1>Mes Travaux</h1>
+                                    <div class="divider">
+                                        <div class="zigzag large clearfix " data-svg-drawing="yes">
+                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332	29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fin du titre du portfolio -->
+                                <!-- Debut du contenu du portfolio -->
+                                <div class="content">
+                                    <div class="block-content ">
+                                        <div class="works">
+                                            <div class="row">
+                                                <div class="block-filter tCenter">
+                                                    <ul id="category" class="filter">
+                                                        <li><a data-filter="all" href="#" class="active">Tous</a></li>
+                                                        <li><a data-filter="gravure" href="#">Gravure Laser</a></li>
+                                                        <li><a data-filter="impression" href="#">Impression 3D</a></li>
+                                                        <li><a data-filter="photo" href="#">Photographie</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="divider-m tCenter margTSSmall margBSmall clearfix">
+                                                    <div class="col-md-12">
+                                                        <div class="zigzag medium clearfix " data-svg-drawing="yes">
+                                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="45" height="5" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332	29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <ul class="work">
+                                                    <!-- Debut d'un item -->
+                                                    <li class="col-md-4 wow flipInX" data-wow-duration="2s">
+                                                        <div class="item gravure">
+                                                            <a class="box" href="style/img/portfolio/1.jpg">
+                                                                <div class="desc">
+                                                                    <h3 class="proj-desc">Plaque EPN Herstal
+                                                                        <span class="zigzag work clearfix " data-svg-drawing="yes">
+                                                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                                                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332	29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                                                            </svg>
+                                                                        </span>
+                                                                        <span>Gravure Laser</span>
+                                                                    </h3>
+                                                                </div>
+                                                                <img alt="" src="style/img/portfolio/1.jpg">
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <!-- Fin d'un item -->
+                                                    <!-- Debut d'un item -->
+                                                    <li class="col-md-4 wow flipInY" data-wow-duration="2s">
+                                                        <div class="item impression">
+                                                            <a class="box" href="style/img/portfolio/2.jpg">
+                                                                <div class="desc">
+                                                                    <h3 class="proj-desc">Sifflet
+                                                                        <span class="zigzag work clearfix " data-svg-drawing="yes">
+                                                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                                                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332	29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                                                            </svg>
+                                                                        </span>
+                                                                        <span>Impression 3D</span>
+                                                                    </h3>
+                                                                </div>
+                                                                <img src="style/img/portfolio/2.jpg" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <!-- Fin d'un item -->
+                                                    <!-- Debut d'un item -->
+                                                    <li class="col-md-4 wow flipInX" data-wow-duration="2s">
+                                                        <div class="item gravure">
+                                                            <a class="box" href="style/img/portfolio/3.jpg">
+                                                                <div class="desc">
+                                                                    <h3 class="proj-desc">Porte clé Plexi
+                                                                        <span class="zigzag work clearfix " data-svg-drawing="yes">
+                                                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                                                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332	29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                                                            </svg>
+                                                                        </span>
+                                                                        <span>Gravure Laser</span>
+                                                                    </h3>
+                                                                </div>
+                                                                <img alt="" src="style/img/portfolio/3.jpg">
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <!-- Fin d'un item -->
+                                                    <!-- Debut d'un item -->
+                                                    <li class="col-md-4 wow flipInY" data-wow-duration="2s">
+                                                        <div class="item photo">
+                                                            <a class="box" href="style/img/portfolio/4.jpg">
+                                                                <div class="desc">
+                                                                    <h3 class="proj-desc">Gare de calatraja
+                                                                        <span class="zigzag work clearfix " data-svg-drawing="yes">
+                                                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                                                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332	29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                                                            </svg>
+                                                                        </span>
+                                                                        <span>Photographie</span>
+                                                                    </h3>
+                                                                </div>
+                                                                <img alt="" src="style/img/portfolio/4.jpg">
+                                                            </a>
+
+                                                        </div>
+                                                    </li>
+                                                    <!-- Fin d'un item -->
+                                                    <!-- Debut d'un item -->
+                                                    <li class="col-md-4 wow flipInX" data-wow-duration="2s">
+                                                        <div class="item gravure">
+                                                            <a class="box" href="style/img/portfolio/5.jpg">
+                                                                <div class="desc">
+                                                                    <h3 class="proj-desc">Yin Yang
+                                                                        <span class="zigzag work clearfix " data-svg-drawing="yes">
+                                                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                                                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332 29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                                                            </svg>
+                                                                        </span>
+                                                                        <span>Gravure Laser</span>
+                                                                    </h3>
+                                                                </div>
+                                                                <img alt="" src="style/img/portfolio/5.jpg">
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <!-- Fin d'un item -->
+                                                    <!-- Debut d'un item -->
+                                                    <li class="col-md-4 wow flipInY" data-wow-duration="2s">
+                                                        <div class="item impression">
+                                                            <a class="box" href="style/img/portfolio/6.jpg">
+                                                                <div class="desc">
+                                                                    <h3 class="proj-desc">Scan 3D d'une personne
+                                                                        <span class="zigzag work clearfix " data-svg-drawing="yes">
+                                                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                                                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332	29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                                                            </svg>
+                                                                        </span>
+                                                                        <span>Impression 3D</span>
+                                                                    </h3>
+                                                                </div>
+                                                                <img alt="" src="style/img/portfolio/6.jpg">
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <!-- Fin d'un item -->
+                                                    <!-- Debut d'un item -->
+                                                    <li class="col-md-4 wow flipInX" data-wow-duration="2s">
+                                                        <div class="item photo">
+                                                            <a class="box" href="style/img/portfolio/7.jpg">
+                                                                <div class="desc">
+                                                                    <h3 class="proj-desc">Street View
+                                                                        <span class="zigzag work clearfix " data-svg-drawing="yes">
+                                                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                                                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332	29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                                                            </svg>
+                                                                        </span>
+                                                                        <span>Photographie</span>
+                                                                    </h3>
+                                                                </div>
+                                                                <img alt="" src="style/img/portfolio/7.jpg">
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <!-- Fin d'un item -->
+                                                    <!-- Debut d'un item -->
+                                                    <li class="col-md-4 wow flipInY" data-wow-duration="2s">
+                                                        <div class="item impression">
+                                                            <a href="style/img/portfolio/8.jpg">
+                                                                <div class="desc">
+                                                                    <h3 class="proj-desc">Porte clé EPN
+                                                                        <span class="zigzag work clearfix " data-svg-drawing="yes">
+                                                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                                                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332	29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                                                            </svg>
+                                                                        </span>
+                                                                        <span>Impression 3D</span>
+                                                                    </h3>
+                                                                </div>
+                                                                <img alt="" src="style/img/portfolio/8.jpg">
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <!-- Fin d'un item -->
+                                                    <!-- Debut d'un item -->
+                                                    <li class="col-md-4 wow flipInX" data-wow-duration="2s">
+                                                        <div class="item gravure">
+                                                            <a class="box" href="style/img/portfolio/9.jpg">
+                                                                <div class="desc">
+                                                                    <h3 class="proj-desc">Test Jeans
+                                                                        <span class="zigzag work clearfix " data-svg-drawing="yes">
+                                                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                                                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332	29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                                                            </svg>
+                                                                        </span>
+                                                                        <span>Gravure Laser</span>
+                                                                    </h3>
+                                                                </div>
+                                                                <img alt="" src="style/img/portfolio/9.jpg">
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <!-- Fin d'un item -->
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <!-- Fin du contenu du portfolio -->
+                                <!-- Debut des boutons -->
+                                <div class="button ofsInTop tCenter">
+                                    <div class="divider">
+                                        <div class="zigzag large clearfix " data-svg-drawing="yes">
+                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332	29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col-md-12">
+                                            <a class="but opc-1 ico" href="cv.pdf">Télécharger mon CV</a>
+                                            <a class="but opc-2 ico" href="javascript:window.print(cv.pdf)">Imprimer mon CV</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fin des boutons -->
+                            </div>
+                        </section>
+                        <!-- Fin de la section du portfolio -->
+                        <!-- Debut de la section contact -->
+                    	<section id="contact" class="bgWhite ofsInBottom">
+                        	<div class="contact">
+                                <!-- Debut du titre de la carte -->
+								<div class="main-title">
+								    <h1>Carte</h1>
+									<div class="divider">
+									   <div class="zigzag large clearfix "  data-svg-drawing="yes" >
+                                            <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332 29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fin du titre de la carte -->
+                                <!-- Debut de la carte -->
+                                <div class="content">
+                                    <div class="block-content ">
+                                        <div class="block-map">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div id="map">
+                                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2535.145217947182!2d5.187640516153457!3d50.550069379489216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c1a83c4c200a5f%3A0x1612c33ccc36c68!2sRue+Alphonse+Nicolas+523%2C+4520+Wanze!5e0!3m2!1sfr!2sbe!4v1526589915690" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fin de la carte -->
+                        		<!-- Debut du titre des informations de contact -->
+                            	<div class="main-title">
+                                	<h1>Informations de contact</h1>
+                                	<div class="divider">
+                                    	<div class="zigzag large clearfix " data-svg-drawing="yes">
+                                        	<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+												<path d="M1.357,12.26 10.807,2.81 20.328,12.332	29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+											</svg>
+                                    	</div>
+                                	</div>
+                            	</div>
+                            	<!-- Fin du titre des informations de contact -->
+                            	<!-- Debut du contenu des informations de contact -->
+                            	<div class="content">
+	                                <div class="block-content ">
+                                    	<div class="block-info">
+	                                        <div class="row">
+                                            	<div class="col-md-12">
+                                                	<div class="info-holder margTMedium wow flipInX" data-wow-duration="2s">
+                                                    	<div class="address-info">
+                                                        	<i class="icon-location"></i>
+                                                        	<p>Sam Ronvaux <br/> Rue Alphonse Nicolas,523<br/>4520 Moha, Belgique</p>
+                                                    	</div>
+                                                    	<div class="contact-info tCenter">
+                                                        	<ul>
+                                                            	<li>
+                                                            		<a href="mailto:samronvaux@gmail.com">
+                                                                		<div class="ico"><i class="icon-mail"></i></div>
+                                                                		<p>samronvaux@gmail.com</p>
+                                                                	</a>
+                                                            	</li>
+                                                            	<li>
+                                                            		<a href="tel:0032491078668">
+                                                                		<div class="ico"><i class="icon-phone"></i></div>
+                                                                		<p>+32 491 07.86.68</p>
+                                                                	</a>
+                                                            	</li>
+                                                            	<li>
+                                                            		<a href="https://be.linkedin.com/in/sam-ronvaux" target="_blank">
+                                                                		<div class="ico"><i class="icon-link"></i></div>
+                                                                		<p>Sam Ronvaux</p>
+                                                                	</a>
+                                                            	</li>
+                                                        	</ul>
+                                                    	</div>
+                                                	</div>
+                                            	</div>
+                                        	</div>
+                                    	</div>
+                                	</div>
+                            	</div>
+                            	<!-- Fin du contenu des informations de contact -->
+                            	<!-- Debut du titre du formulaire -->
+                            	<div class="main-title">
+                                	<h1>Formulaire de contact</h1>
+                                	<div class="divider">
+                                    	<div class="zigzag large clearfix " data-svg-drawing="yes">
+                                       		<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+												<path d="M1.357,12.26 10.807,2.81 20.328,12.332	29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+											</svg>
+                                    	</div>
+                                	</div>
+                            	</div>
+                            	<!-- Fin du titre du formulaire -->
+	                            <!-- Debut du contenu du formulaire -->
+                            	<div class="content">
+                                	<div class="block-content ">
+                                    	<div class="block-contact">
+                                        	<div class="row">
+                                            	<div class="col-md-12">
+                                            		<!-- Debut du formulaire -->
+                                                	<form class="contact-form wow flipInY" data-wow-duration="2s" method="post" action="pasdephp.php">
+                                                    	<div class="input-columns clearfix">
+                                                            <div class="column1">
+                                                                <div class="column-inner">
+                                                                    <input type="text" placeholder="Prénom" value="" id="firstname" name="firstname" autocomplete="given-name" oninput="this.value = this.value.charAt(0).toUpperCase() + this.value.substr(1);">
+                                                                </div>
+                                                            </div>
+                                                            <div class="column2">
+                                                                <div class="column-inner">
+                                                                    <input type="text" placeholder="Nom de famille" value="" id="name" name="name" autocomplete="family-name" oninput="this.value = this.value.charAt(0).toUpperCase() + this.value.substr(1);">
+                                                                </div>
+                                                            </div>
+                                                           	<input type="text" placeholder="Email" value="" id="email" name="email" autocomplete="email" oninput="this.value = this.value.toLowerCase();">
+                                                    	</div>
+                                                    	<input type="text" placeholder="Sujet" value="" id="subject" name="sujet" oninput="this.value = this.value.charAt(0).toUpperCase() + this.value.substr(1);">
+                                                    	<textarea name="message" placeholder="Message" id="message" cols="45" rows="10" oninput="this.value = this.value.charAt(0).toUpperCase() + this.value.substr(1);" ></textarea>
+                                                    	<input type="submit" value="Envoyer" class="but opc-2 submit">
+                                                	</form>
+                                                	<!-- Fin du formulaire -->
+                                                	<!-- Debut de valeur de retour du formulaire -->
+                                                <!-- (Inactif dans cette version)
+                                                	<div id="success">
+                                                    	<h2>Votre message a bien été envoyé!</h2>
+                                                	</div>
+                                                	<div id="error">
+                                                    	<h2>Votre message n'a pas pus etre envoyé...</h2>
+                                                	</div>
+                                                -->
+                                                	<!-- Fin de valeur de retour du formulaire -->
+                                            	</div>
+                                        	</div>
+                                    	</div>
+                                	</div>
+                            	</div>
+                            	<!-- Fin du contenu du formulaire -->
+                        	</div>
+                    	</section>
+                    	<!-- Fin de la section de contact -->
+                	</div>
+					<!-- Fin de la colonne de droite (informations) -->
+                    <div class="BackToTop wow fadeIn" data-wow-duration="2s"></div>
+            	</div>
+	        </div>
+	        <!-- Fin du container Anglais -->
+<!-- ########################################################################################################################################### -->
+	    </div>
+	    <!-- Fin du Wrapper -->
+<!-- ########################################################################################################################################### -->
+	    <!-- Debut des appels JavaScript -->
+        <script src="style/js/lib/jquery.js"></script>
+        <script src="style/js/lib/jquery-migrate.js"></script>
+        <script src="style/js/lib/jquery.easing.js"></script>
+        <script src="style/js/lib/jquery.easytabs.min.js"></script>
+        <script src="style/js/lib/jquery.magnific-popup.js"></script>
+        <script src="style/js/lib/modernizr.js"></script>
+        <script src="style/js/lib/owl.carousel.js"></script>
+        <script src="style/js/lib/placeholders.min.js"></script>
+        <script src="style/js/lib/t.min.js"></script>
+        <script src="style/js/lib/wow.js"></script>
+        <script src="style/js/lib/prognroll.min.js"></script>
+        <script src="style/js/script.js"></script>
+        <!-- Fin des appels Javascript -->
+        <!-- Debut des inits Javascript -->
+            <!-- Debut init easytab-fr -->
+            <script>
+                (function($) {
+                    "use strict";
+                    $(document).ready(function(){
+                        $('#wrapper').easytabs({
+                            animate: true,
+                            updateHash: false,
+                            transitionIn: 'fadeIn',
+                            transitionOut: 'fadeOut',
+                            animationSpeed: 100,
+                            tabActiveClass: 'active',
+                            tabs: ' #main-nav.tabbed > ul > li ',
+                            transitionInEasing: 'linear',
+                            transitionOutEasing: 'linear'
+                        });
+                        $("body").prognroll({
+                            height: 5,
+                            color: "#CD5353",
+                            custom: false
+                        });
+                    });
+                })(jQuery);
+            </script>
+            <!-- Fin init easytab-fr -->
+        	<!--Debut Init de wow.js -->
+        	<script>
+        		new WOW().init();
+        	</script>
+        	<!-- Fin Init de wow.js -->
+        	<!-- Debut de la config de Prognoll  -->
+
+        	<!-- Fin de la config de Prognoll  -->
+        	<!-- Debut de la Fonction de BackToTop  -->
+        	<script>
+        		var duration = 500;
+        		jQuery(window).scroll(function () {
+        		    if (jQuery(this).scrollTop() > 100) {
+        		        jQuery('.BackToTop').fadeIn(duration);
+        		    } else {
+        		        jQuery('.BackToTop').fadeOut(duration);
+        		    }
+        		});
+        		jQuery('.BackToTop').click(function (event) {
+        		    event.preventDefault();
+        		    jQuery('html, body').animate({
+        		        scrollTop: 0
+        		    }, duration);
+        		    return false;
+        		})
+        	</script>
+        	<!-- Fin de la Fonction de BackToTop  -->
+        <!-- Fin des inits Javascript -->
+	</body>
 </html>
