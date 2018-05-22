@@ -7,9 +7,8 @@
         jQuery("#loaderInner").fadeOut();
         jQuery("#loader").delay(200).fadeOut("slow");
     });
+    //------------------------------------- Fin de la Fonction de chargement ------------------------------------------------//
     $(document).ready(function () {
-
-        //------------------------------------- Fin de la Fonction de chargement ------------------------------------------------//
 
         //------------------------------------- Debut init easytabs ------------------------------------------------//
         $('#wrapper').easytabs({
