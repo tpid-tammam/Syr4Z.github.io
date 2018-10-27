@@ -107,7 +107,7 @@
             $('#en').addClass('active');
             $('#lang-fr').fadeOut(500);
             $('#lang-en').fadeIn(500);
-            '#lang-fr'.location.reload()
+            '#lang-fr'.location.reload(true)
         });
         $('#fr').click(function(e) {
             e.preventDefault();
@@ -115,7 +115,7 @@
             $('#fr').addClass('active');
             $('#lang-en').fadeOut(500);
             $('#lang-fr').fadeIn(500);
-            '#lang-fr'.location.reload()
+            '#lang-fr'.location.reload(true)
         });
         //------------------------------------- Fin du switcher ------------------------------------------------//
 
