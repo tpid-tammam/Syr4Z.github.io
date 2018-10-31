@@ -737,7 +737,7 @@ figure.pushup:hover figcaption {
     padding: 4% 0 4% 0;
 }
 .info ul.info-list li .value {
-    width: 63%;
+    /*width: 63%;*/
     color: #666666;
 }
 .info ul.info-list li:last-child {
