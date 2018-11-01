@@ -1298,12 +1298,6 @@ h6 {
         border-right: none;
         border-bottom: none;
     }
-    .main-title h1{
-		line-height: 0.8;
-	}
-	.main-title .divider{
-		position: static;
-	}
     .bottom-header {
         margin-bottom: 10px;
     }
@@ -1391,6 +1385,12 @@ h6 {
     .vc {
         display: inline !important;
     }
+    .main-title h1{
+		line-height: 0.8;
+	}
+	.main-title .divider{
+		position: static;
+	}
     .skill .title {
         transform: rotate(0deg);
         -webkit-transform: rotate(0);
