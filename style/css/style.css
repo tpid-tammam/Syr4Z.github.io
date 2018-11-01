@@ -1483,6 +1483,12 @@ h6 {
         text-align: center;
         width: 100%;
     }
+    .main-title h1{
+		line-height: 0.8;
+	}
+	.main-title .divider{
+		position: static;
+	}
     .about .profile h1 {
         font-size: 25px;
     }
